@@ -72,7 +72,6 @@ def print_results(lista_mod, numero_total, aptos, inaptos, lista_int1, lista_int
     print("Faixas etária [<19 e >40]: Número de atletas", len(lista_int5), "| Percentagem:", p_19_40, "%")
     
 
-# Chamar as funções
 lista_mod, numero_total, aptos, inaptos, lista_int1, lista_int2, lista_int3, lista_int4, lista_int5= process_data()
 print_results(lista_mod, numero_total, aptos, inaptos, lista_int1, lista_int2, lista_int3, lista_int4, lista_int5)
 
