@@ -1,7 +1,7 @@
 
 # PL2024
 
-## Autor
+## TPC2
 
 **Nome:** Henrique Morais Pereira
 
