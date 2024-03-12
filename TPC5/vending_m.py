@@ -49,9 +49,12 @@ def saldo(moedas):
     return sum(moedas)  
 
 def display_saldo(saldo):
-    euros = saldo // 100 
-    cents = saldo % 100  
-    return f"{euros}e{cents}c"
+    if saldo >= 100:
+        euros = saldo // 100 
+        cents = saldo % 100  
+        return f"{euros}e{cents}c"
+    else:
+        return f"{saldo}c"
 
     
 def comprar(produto, saldo):
@@ -96,9 +99,6 @@ def main():
             print(f"Troco: {display_saldo(saldo(moedas))}") 
             print("ADEUS e OBRIGADO!")
             break
-
-
-
 
 if __name__ == "__main__":
     main()
